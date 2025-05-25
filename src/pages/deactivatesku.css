@@ -1,0 +1,103 @@
+:root {
+  --border-radius: 8px;
+  --primary: #0284c7;
+  --primary-light: rgba(2, 132, 199, 0.3);
+  --error: #dc2626;
+  --success: #16a34a;
+  --gray: #d1d5db;
+  --dark: #2c3e50;
+}
+
+.deactivate-sku-container {
+  max-width: 560px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+  font-family: 'Roboto', Arial, sans-serif;
+  border: 1px solid var(--gray);
+}
+
+.deactivate-sku-container h2 {
+  color: var(--dark);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+.deactivate-form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.deactivate-form input {
+  flex: 1;
+  padding: 1rem 1.25rem;
+  border: 2px solid var(--gray);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.deactivate-form input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+  outline: none;
+}
+
+.deactivate-form button {
+  padding: 1rem 1.75rem;
+  background-color: var(--error);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.deactivate-form button:hover {
+  background-color: #070000;
+  transform: translateY(-1px);
+}
+
+.confirmation {
+  padding: 1.25rem;
+  background-color: #011005;
+  color: var(--success);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  border: 1px solid #011508;
+}
+
+.deactivation-list h3 {
+  color: var(--dark);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.deactivation-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.deactivation-list li {
+  padding: 1.25rem;
+  margin-bottom: 0.75rem;
+  background-color: white;
+  border: 1px solid var(--gray);
+  border-radius: var(--border-radius);
+  transition: all 0.2s ease;
+}
+
+.deactivation-list li:hover {
+  border-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.1);
+}
